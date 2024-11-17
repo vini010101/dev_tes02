@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Post</title>
+    <link rel="stylesheet" href="/frontend/style.css">
+</head>
+<body>
+
+<div class="post-create-container">
+    <h1>Criar Novo Post</h1>
+
+    <form id="post-Form1">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="description">Descrição:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <button type="submit">Salvar Post</button>
+    </form>
+
+    <div class="post-list-container">
+        <h2>Posts Existentes</h2>
+        <div id="posts-list">
+            <!-- Os posts serão inseridos aqui dinamicamente -->
+        </div>
+    </div>
+
+    <!-- Botão para deletar todos os posts -->
+    <div class="delete-all-posts">
+        <button id="delete-all-posts-button">Deletar Todos os Posts</button>
+    </div>
+</div>
+
+<script src="/frontend/script.js"></script>
+</body>
+</html>

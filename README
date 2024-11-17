@@ -1,0 +1,65 @@
+Projeto CRUD com FastAPI
+
+Este é um projeto CRUD (Create, Read, Update, Delete) desenvolvido utilizando FastAPI e MySQL. O objetivo deste projeto é demonstrar minhas habilidades no desenvolvimento de APIs RESTful, bem como habilidades em integração de banco de dados e autenticação de usuários.
+
+O sistema permite o cadastro, leitura e remoção de registros em uma tabela de posts. O usuário pode fazer login com as credenciais fornecidas, interagir com a API e realizar operações CRUD em registros.
+
+Além de atender aos requisitos do teste técnico anterior, este CRUD foi desenvolvido para destacar minhas habilidades em:
+
+Desenvolvimento de APIs RESTful com FastAPI
+Integração com banco de dados MySQL
+Autenticação de usuários
+Manipulação de dados utilizando SQLAlchemy
+Funcionalidades
+Login: O usuário pode fazer login utilizando o e-mail teste@gmail.com e a senha 1234.
+Create: Criar um novo registro na tabela posts.
+Read: Ler todos os registros da tabela posts.
+Delete: Deletar um registro existente na tabela posts.
+Como Rodar o Projeto
+Pré-requisitos
+Python 3.7+
+MySQL ou MariaDB
+Pip (gerenciador de pacotes do Python)
+Passos para Instalar
+Clone este repositório:
+git clone https://github.com/vini010101
+
+bash
+pip install -r requirements.txt
+Configure o banco de dados MySQL:
+
+Crie um banco de dados chamado blog:
+
+sql
+CREATE DATABASE blog;
+Crie as tabelas necessárias com o comando SQL que será fornecido pelo SQLAlchemy ao rodar o projeto.
+
+Execute o servidor FastAPI:
+
+
+uvicorn main:app --reload
+O servidor estará rodando em http://127.0.0.1:8000.
+
+Endpoint de Login
+POST /login: Realize login utilizando as credenciais:
+Email: teste@gmail.com
+Senha: 1234
+Endpoints CRUD
+POST /posts: Criação de um novo post.
+
+Exemplo de payload:
+
+json
+{
+  "title": "Novo Post",
+  "description": "Descrição do post"
+}
+GET /posts: Retorna todos os posts cadastrados.
+
+DELETE /posts/{id}: Deleta um post com o id especificado.
+
+Teste de Autenticação
+A autenticação é simples: após o login bem-sucedido, o usuário poderá acessar os endpoints CRUD utilizando um token de autenticação.
+
+Contribuições
+Este projeto foi desenvolvido com o objetivo de demonstrar minhas habilidades em criação de APIs, integração de banco de dados e implementação de autenticação.

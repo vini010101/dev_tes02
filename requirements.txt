@@ -1,0 +1,11 @@
+fastapi
+sqlalchemy
+mysql-connector-python
+uvicorn
+jinja2
+python-multipart
+uvicorn
+mysql-connector-python
+bcrypt
+pydantic
+pymysql

@@ -22,7 +22,7 @@ MySQL ou MariaDB
 Pip (gerenciador de pacotes do Python)
 Passos para Instalar
 Clone este repositório:
-git clone https://github.com/vini010101
+git clone https://github.com//vini010101/dev_tes02
 
 bash
 pip install -r requirements.txt
